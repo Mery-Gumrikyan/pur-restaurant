@@ -1,0 +1,50 @@
+.footerWrapper {
+  background-color: #333333;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+@media (max-width: 43rem) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: flex-start;
+  }
+}
+
+.contactsText {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contactsText a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contactsText a:hover {
+  text-decoration: underline;
+}
+
+.webPageLogos {
+  display: flex;
+  gap: 1rem;
+}
+
+.webLogo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.webLogo:hover {
+  transform: scale(1.1);
+}

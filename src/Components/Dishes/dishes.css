@@ -1,0 +1,39 @@
+.dishes {
+  padding: 1.5rem 1rem 4rem;
+}
+
+.dishesWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+}
+
+.dishesItem {
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  overflow: hidden;
+}
+
+.dishesItemImg {
+  width: 100%;
+}
+
+.dishesItemTextPart {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dishesItemName {
+  font-size: 1.75rem;
+  color: #9b9ea1;
+  font-weight: 500;
+}
+
+.dishesItemDescription {
+  font-size: 1rem;
+  color: #212529;
+}
