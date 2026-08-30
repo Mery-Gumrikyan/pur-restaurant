@@ -1,5 +1,3 @@
-import DishesItems from "./DishesItems";
-
 import "./dishes.css";
 
 function Dishes() {
@@ -65,9 +63,27 @@ function Dishes() {
   return (
     <div className="dishes centralize" id="dishes">
       <h2 className="heading">Ճաշատեսակներ</h2>
-      <DishesItems dishes={dishes} />
+      <div className="dishesWrapper">
+        {dishes.map((item) => (
+          <DishesItem dish={item} key={item.id} />
+        ))}
+      </div>
     </div>
   );
 }
+
+
+function DishesItem({ dish }) {
+  return (
+    <div className="dishesItem">
+      <img src={dish.img} alt={dish.name} className="dishesItemImg" />
+      <div className="dishesItemTextPart">
+        <h5 className="dishesItemName">{dish.name}</h5>
+        <p className="dishesItemDescription">{dish.description}</p>
+      </div>
+    </div>
+  );
+}
+
 
 export default Dishes;

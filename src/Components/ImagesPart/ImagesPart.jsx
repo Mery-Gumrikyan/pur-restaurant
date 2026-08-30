@@ -1,6 +1,6 @@
 import "./images.css";
 
-import ImagesItems from "./ImageItems";
+// import ImagesItems from "./ImageItems";
 
 function ImagesPart() {
   const images = [
@@ -21,7 +21,11 @@ function ImagesPart() {
   return (
     <div className="images centralize" id="images">
       <h2 className="heading">Լուսանկարներ</h2>
-      <ImagesItems images={images} />
+      <div className="imagesWrapper">
+        {images.map((img) => (
+          <img src={img} key={img} alt="Pur Restaurant" className="img"></img>
+        ))}
+      </div>
     </div>
   );
 }

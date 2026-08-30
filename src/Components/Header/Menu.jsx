@@ -1,5 +1,3 @@
-import { Link } from "react-router";
-
 function Menu({ isMobile, display }) {
   const menu = [
     { name: "Գլխավոր", id: "main" },
@@ -10,17 +8,15 @@ function Menu({ isMobile, display }) {
 
   return (
     <>
-      <ul
+      <nav
         className={`menu ${isMobile ? "mobileMenu" : "webMenu"} ${!display && "noDisplay"}`}
       >
         {menu.map((item) => (
-          <li key={item.id} className="menuItem">
-            <Link to={`/#${item.id}`} className="menuItem">
-              {item.name}
-            </Link>
-          </li>
+          <a href={`/#${item.id}`} key={item.id} className="menuItem">
+            {item.name}
+          </a>
         ))}
-      </ul>
+      </nav>
     </>
   );
 }
