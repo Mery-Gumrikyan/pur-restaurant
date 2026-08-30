@@ -6,7 +6,7 @@ import Map from "./Map";
 
 function About() {
   return (
-    <div className="about centralize" id="about">
+    <div className="about centralize scroll-margin" id="about">
       <h2 className="heading">Մեր Մասին</h2>
 
       <div className="aboutCards">

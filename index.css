@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,10 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: auto;
+}
+
+.scroll-margin {
+  scroll-margin-top: 9rem;
 }
 
 @media (max-width: 81rem) {

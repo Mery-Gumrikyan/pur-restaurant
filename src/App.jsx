@@ -1,13 +1,19 @@
-import Home from "./Home";
 import Header from "./Components/Header/Header";
-import ScrollToHash from "./ScrollToHash";
+import { PourAdvertisementVideo } from "./Components/CustomVideoPlayer/CustomVideoPlayer";
+import Dishes from "./Components/Dishes/Dishes";
+import ImagesPart from "./Components/ImagesPart/ImagesPart";
+import About from "./Components/About/About";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <ScrollToHash />
       <Header />
-      <Home />
+      <PourAdvertisementVideo />
+      <Dishes />
+      <ImagesPart />
+      <About />
+      <Footer />
     </>
   );
 }
