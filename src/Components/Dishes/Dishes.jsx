@@ -61,7 +61,7 @@ function Dishes() {
   ];
 
   return (
-    <div className="dishes centralize" id="dishes">
+    <div className="dishes centralize scroll-margin" id="dishes">
       <h2 className="heading">Ճաշատեսակներ</h2>
       <div className="dishesWrapper">
         {dishes.map((item) => (
@@ -71,7 +71,6 @@ function Dishes() {
     </div>
   );
 }
-
 
 function DishesItem({ dish }) {
   return (
@@ -84,6 +83,5 @@ function DishesItem({ dish }) {
     </div>
   );
 }
-
 
 export default Dishes;

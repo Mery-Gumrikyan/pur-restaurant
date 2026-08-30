@@ -19,7 +19,9 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: auto;
+}
 
+.scroll-margin {
   scroll-margin-top: 9rem;
 }
 

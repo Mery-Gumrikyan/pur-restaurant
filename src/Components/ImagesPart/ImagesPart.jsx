@@ -1,7 +1,5 @@
 import "./images.css";
 
-// import ImagesItems from "./ImageItems";
-
 function ImagesPart() {
   const images = [
     "/images/photo1.jpg",
@@ -19,7 +17,7 @@ function ImagesPart() {
   ];
 
   return (
-    <div className="images centralize" id="images">
+    <div className="images centralize scroll-margin" id="images">
       <h2 className="heading">Լուսանկարներ</h2>
       <div className="imagesWrapper">
         {images.map((img) => (
